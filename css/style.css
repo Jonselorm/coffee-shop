@@ -48,7 +48,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -138,6 +138,8 @@ section {
     margin: 0 auto;
     padding-top: 6rem;
     text-align: center;
+    /* display: flex; */
+    /* flex-direction: row; */
 }
 
 .home .image-slider {
@@ -205,8 +207,10 @@ section {
 }
 
 .about .row .content .title {
+    color: var(--main-color);
     font-size: 2rem;
     line-height: 1.8;
+
 }
 
 section {
@@ -237,6 +241,7 @@ section {
     border-radius: var(--border-radius);
     padding: 2rem;
     width: 50%;
+    flex-direction: row;
     text-align: center;
     cursor: pointer;
 }
@@ -294,3 +299,170 @@ section {
 .menu .box-container .box .content .price {
     font-size: 2rem;
 }
+
+/* review section*/
+.review .review-slider{
+    padding: 10rem 0;
+}
+
+.review .review-slider .box{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    user-select: none;
+    position: relative;
+}
+
+.review .review-slider .box .fa-quote-left{
+    z-index: 1;
+    color: #433;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 6rem;
+
+}
+
+
+.review .review-slider .box .fa-quote-right{
+    z-index: 1;
+    color: #433;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    
+}
+
+.review .review-slider .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+}
+
+/*for review slider*/
+.review .review-slider{
+    padding: 10rem 0;
+    z-index: -1;
+
+}
+
+.review .review-slider .Swiper-pagination{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem; 
+}
+
+.book form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.book form input{
+    margin-top: 1.5rem;
+    padding: 50px;
+    border-radius: var(--border-radius);
+    height: 4rem;
+    
+}
+
+.book form input textarea{
+    max-width:  10rem;
+    height: 7rem;
+}
+
+.book form input .btn{
+    max-width: 10rem;
+}
+
+body{
+    font-size: 16px;
+    
+} 
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .navbar{
+        display: none;
+
+    }
+    .header .logo {
+        color: var(--main-color);
+        font-size: 1rem;
+    }
+
+    
+.home {
+    min-height: 100vh;
+    padding-top: 90px;
+    background-image: url(../image/image/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5;
+}
+
+.home .row .content {
+    width: 5rem;
+    padding-top: 1rem;
+}
+
+.home .row .content h3 {
+    text-decoration: uppercase;
+    color: var(--main-color);
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+}
+
+.btn{
+    border: var(--border);
+    width: 5px;
+    padding: 0.6rem 0.2rem;
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+}
+
+.home .row .image {
+    width: 20%;
+    max-width: 42px;
+    margin: 0 auto;
+    padding-top: 6rem;
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.home .image-slider {
+    text-align: center;
+    padding: 3rem 0;
+    padding-top: 15rem;
+}
+
+.home .image-slider img {
+    margin-top: 5rem;
+    height: 9rem;
+
+}
+
+.home .row .image img {
+    height: 25rem;
+    animation: move 2s linear infinite;
+
+
+} }
+
+  
+    
